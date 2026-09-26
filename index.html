@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Rắn Săn Mồi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+        <h1>🐍 RẮN SĂN MỒI</h1>
+
+        <div class="info">
+            <span>Điểm: <b id="score">0</b></span>
+            <span>Kỷ lục: <b id="highScore">0</b></span>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <p id="message">Nhấn nút để bắt đầu!</p>
+
+        <button id="startBtn">▶ BẮT ĐẦU</button>
+
+        <div class="controls">
+            <button onclick="changeDirection('up')">⬆️</button>
+
+            <div>
+                <button onclick="changeDirection('left')">⬅️</button>
+                <button onclick="changeDirection('down')">⬇️</button>
+                <button onclick="changeDirection('right')">➡️</button>
+            </div>
+        </div>
+
+        <p class="hint">
+            💻 Dùng phím mũi tên để điều khiển
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
